@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <title>Tulip Festival</title>
+</head>
+<body>
+    <header>
+        <h1>The Tulips</h1>
+            <ul>
+                <li><a href="#map">Tulips world map</a></li>  <!-- Изменил id на href -->
+                <li><a href="#colors">Tulip color meaning</a></li>
+                <li><a href="#make">Make your own tulip</a></li>
+            </ul>
+    </header>
+    
+    <main>
+        <!-- Swiper слайдер -->
+        <div class="swiper tranding-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="photos/gallery/1.jpg" alt="Tulip photo 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="photos/gallery/2.jpg" alt="Tulip photo 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="photos/gallery/4.jpg" alt="Tulip photo 3">
+                </div>
+            </div>
+
+            <div class="tranding-slider-control">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+        <h2 id = "map">Tulips World Map</h2>
+        <p>Explore global tulip production. Drag to rotate the globe and hover over countries to see production numbers.</p>
+        
+        <div id="map-container">
+            <div id="stats-panel">
+                <h3>Tulip Production Statistics</h3>
+                <div id="country-stats">
+                    <p>Hover over a country to see production data</p>
+                </div>
+            </div>
+            <svg id="world_map" width="800" height="500"></svg>
+        </div>
+        
+        <h2 id = "colors">Meaning and Symbolism of Different Color Tulip Flowers</h2>
+        <p>Whether you gift them or grow them, understanding the meanings of tulip colors makes them even more special.</p>
+        
+        <div id="tulip-color">
+            <div class="tulip-item">
+                <img src="photos/colors/white.png" alt="White tulip">
+                <div class="tulip-description">
+                    <p><strong>White tulip</strong> White tulips are one of the most popular types of tulip, possibly due to their versatility.  
+                    The white tulip meaning has come to be associated with purity, love, kindness and honesty. 
+                    For this reason, white tulips are often given to brides or used in a bridal bouquet.</p>
+                </div>
+            </div>
+            <div class="tulip-item">
+                <img src="photos/colors/blue.png" alt="Blue tulip">
+                <div class="tulip-description">
+                    <p><strong>Blue tulip</strong> Blue tulips are a bright and beautiful flower which can be an amazing addition to a graden due to the relatively rarity of their color. 
+                    Blue is associated with truth, sincerity, tranquility and peace. 
+                    Blue tulips are a very suitable flower for people who are going through a difficult time, either in their emotional life or in their physical health.</p>
+                </div>
+            </div>
+            <div class="tulip-item">
+                <img src="photos/colors/yellow.png" alt="Yellow tulip">
+                <div class="tulip-description">
+                    <p><strong>Yellow tulip</strong> The yellow tulips is known to connote positivity and joy. 
+                    They are a celebratory color of tulip, leading them to often be given on special occasions such as birthdays or anniversaries. 
+                    The meaning of yellow tulips also extends to friendship, sincerity, trust and happiness.</p>
+                </div>
+            </div>
+            <div class="tulip-item">
+                <img src="photos/colors/purple.png" alt="Purple tulip">
+                <div class="tulip-description">
+                    <p><strong>Purple tulip</strong> Purple is a color often associated with royalty. 
+                    For this reason, the meaning of purple tulips is wealth, luxury and prosperity. 
+                    We can give a bouquet of these flowers to our friends who are going through difficult economic times and to whom we wish their fortunes to change.</p>
+                </div>
+            </div>
+            <div class="tulip-item">
+                <img src="photos/colors/red.png" alt="Red tulip">
+                <div class="tulip-description">
+                    <p><strong>Red tulip</strong> Red is the color most associated with the passions. 
+                    This means the symbolism of red tulips is true, eternal and passionate love. 
+                    It is the kind of flower that is given to a partner or someone we hope might become a romantic partner in the future.</p>
+                </div>
+            </div>
+            <div class="tulip-item">
+                <img src="photos/colors/pink.png" alt="Pink tulip">
+                <div class="tulip-description">
+                    <p><strong>Pink tulip</strong> Pink is a color that shows tender affection between people, like that between a mother and a child, between siblings and between true friends. 
+                    It is the perfect flower to give for a sweet sixteen, as it symbolizes a life of dreams and aspirations.</p>
+                </div>
+            </div>
+            <div class="tulip-item">
+                <img src="photos/colors/orange.png" alt="Orange tulip">
+                <div class="tulip-description">
+                    <p><strong>Orange tulip</strong> As orange is the color of renewed strength, orange tulips are the perfect flower to give to a couple who is moving to a new house, to a person who is about to start a job or to someone who is sick.
+                    A flower of this color means confidence and vigor.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© Tulips website.</p>
+        <div>
+            <strong>kiselevanna27@mail.ru</strong>
+            <a href="https://github.com/AnnaKiseleva27/html_css_stepik_tasks">
+                <img src="https://avatars.mds.yandex.net/i?id=bd525e0c3717d9c357e378153359ac60fec098a3-5236122-images-thumbs&n=13" alt="GitHub" width="50">
+            </a>
+            <div id="leaflet-map"></div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/leaflet.js"></script>
+</body>
+</html>
