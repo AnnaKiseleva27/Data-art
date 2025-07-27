@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн магазин</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="https://avatars.mds.yandex.net/i?id=700689e39e15ea87b6495f19b95a648e99ca99ea-9148772-images-thumbs&n=13" alt="хайп shop" width="100">
+        <nav>
+            <ul>
+                <li><a href="#">тренд 1</a></li>
+                <li><a href="#">тренд 2</a></li>
+                <li><a href="#">тренд 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>хайповые кроссовки</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://avatars.mds.yandex.net/i?id=ed0730422d5ac3e675d1d6438d2f1effff80c1de-12752869-images-thumbs&n=13" alt="nike air rift">
+                <a href="https://cdek.shopping/p/441047/krossovki-nike-air-rift-ps-white-wolf-grey-belyi?ysclid=m8vu7ke09l22647968"><h3>nike air rift</h3></a>
+                <p>price: 11000 rub</p>
+            </div>
+            <div class="product">
+                <img src="https://avatars.mds.yandex.net/i?id=0b8886bffa5960b1447455913c4b557d636dab62-3979482-images-thumbs&n=13" alt="russian addidas">
+                <a href="http://krossovki-dinamo.ru/krossovki.php"><h3>russian addidas</h3></a>
+                <p>price:1000 rub</p>
+            </div>
+            <div class="product">
+                <img src="https://avatars.mds.yandex.net/i?id=46b8ec517d4aa59e7c68b997de5abe5081b4495b-5483535-images-thumbs&n=13" alt="mp3">
+                <a href="https://aliexpress.ru/popular/кроссовки-с-музыкой?g=undefined&searchInfo=category%3AeyJ0aXRsZSI6IiIsInNsdWciOiIiLCJpZCI6IjAifQ%3D%3D"><h3>mp3 sneakers</h3></a>
+                <p>price: 1567 rub</p>
+            </div>
+        </div>
+        
+        <form action="/submit_form" method="post">
+            <h2>форма для заказа</h2>
+            <label for="username">name</label>
+            <input type="text" name="username" id="username" required>
+            
+            <label for="address">address</label>
+            <input type="text" name="address" id="address" required>
+            
+            <label for="number">phone number</label>
+            <input type="tel" name="number" id="number" required>
+            
+            <button type="submit">Оформить заказ</button>
+        </form>
+    </main>
+    <canvas id = "canvas"></canvas>
+    <footer>
+        <p>© personal website.</p>
+        <div>
+            <strong>kiselevanna27@mail.ru</strong>
+            <a href="https://github.com/AnnaKiseleva27/html_css_stepik_tasks">
+                <img src="https://avatars.mds.yandex.net/i?id=bd525e0c3717d9c357e378153359ac60fec098a3-5236122-images-thumbs&n=13" alt="GitHub" width="50">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
